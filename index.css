@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+/* main compoonents*/
+.main {
+    width: 600px;
+    margin:auto;
+}
+
+h1, h3 {
+    margin:0;
+    padding:0;
+    opacity: 0.90;  
+}
+
+h1{
+    color: #FFF;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Smythe;
+    font-size: 39px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 46px;
+    padding-top: 50px;
+}
+
+h3{
+    padding-left: 46px;
+    padding-top:19px;
+    color: #FFF;
+    font-family: Smythe;
+    font-size: 22.422px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 13.798px; /* 61.538% */ 
+}
+
+body{
+    margin: 0;
+    background-color:white;
+} 
+
+header{
+    background-image:url("./images/burger-header.png");
+    font-family: "smythe";
+    color: white;
+    width:600px;
+    height: 167px;
+}
+
+
+/*item components*/
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #D2D2D2;
+    margin: 0 50px;
+    font-family: Smythe;
+}
+
+.icon-large{
+    font-size: 79px;
+    opacity: 0.72;
+    margin:0 0;
+}
+
+.item-info {
+    text-align: left;
+    margin-left:30px;
+}
+
+.item-title {
+    color: #000;
+font-family: Smythe;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.8px; /* 60% */ 
+}
+
+.item-ingredients {
+    color: #8B8B8B;
+    font-family: Smythe;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */ 
+}
+
+.buttons-container {
+   
+    margin-right:30px;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+}
+
+
+.icon {
+    padding: 20px;
+}
+
+.menu-items__row-right .menu-items__row-right__circle {
+    width: 50px;
+    height: 50px;
+    border: 1.5px solid #DEDEDE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Order Components */
+
+.order-title {
+    color: #000;
+    font-family: Smythe;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 60% */ 
+    text-align: center;
+}
+.order-button {
+    display: block;
+    border-radius: 3px;
+    background: #16DB99;
+    width: 85%;
+    margin-left: 7.5%;
+    height:5%;
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 50px;
+}
+
+.order-items {
+    border-bottom: 1px solid black;
+    margin: 2vh 7.5vw;
+}
+
+.order-item {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1vh;
+
+}
+.item-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.order-item-name {
+    color: #000;
+    font-family: Smythe;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 60% */ 
+}
+
+.order-item-remove {
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 200% */ 
+}
+
+.order-item-price {
+    color: #000;
+    text-align: right;
+    font-family: Smythe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */ 
+}
+
+.order-total {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin: 2% 7.5%;
+    color: #0E0E0E;
+    font-family: Smythe;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/*modal */
+modal {
+    width: 524px;
+    height: 542px;
+    flex-shrink: 0; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.modal-close {
+    display: none;
+}
+
+.modal-open {
+    position: fixed;
+    
+}
+
+.modal-title {
+    color: #000;
+    font-family: Verdana;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.119px; /* 129.664% */ 
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px;
+    width:90%;
+    height: 75%;
+    border-radius: 3.89px;
+    background: #FFF; 
+}
+
+.modal-input {
+    height: 75px;
+    width: 475px;
+    border-radius: 3.89px;
+    border: 1.297px solid #757575;
+    color: #757575;
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31.119px; /* 155.596% */ 
+}
+
+.modal-submit {
+    height:75px;
+    width: 475px;
+    border-radius: 3.89px;
+    background: #16DB99;
+    color: var(--white, #FFF);
+    font-family: Verdana;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31.119px;
+    
+}
+
+.darkened {
+    background-color: #eee
+}
+
+#thanks {
+    border-radius: 3px;
+    background: #ECFDF5; 
+    width: 504px;
+    height: 120px;
+    flex-shrink: 0;
+    color: #065F46;
+    font-family: Smythe;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 52.5% */ 
+    margin-top: 2vh;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+
+
