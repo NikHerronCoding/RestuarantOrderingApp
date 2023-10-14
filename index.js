@@ -4,12 +4,14 @@ import {menuArray} from './data.js'
 //variable that represents the user ordered items
 let shoppingCart = []
 
+// DOM (document Object Modal)
 const modal = document.getElementById('order-modal');
 const thanksButton = document.getElementById('thanks-button');
+const feed = document.getElementById('feed')
 
 //function iterates over the menuArray to populate a feed of items to purchase
 function generateFeed(){
-    let feed = document.getElementById('feed')
+
     let feedHtml = menuArray.map(item => {
         let newItem = new Item(item)
         return newItem.createHTML();
