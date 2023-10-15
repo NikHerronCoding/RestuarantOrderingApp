@@ -196,7 +196,7 @@ line-height: 16.8px; /* 60% */
 }
 
 /*modal */
-modal {
+section {
     width: 524px;
     height: 542px;
     flex-shrink: 0; 
