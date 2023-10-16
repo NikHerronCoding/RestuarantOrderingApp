@@ -138,18 +138,28 @@ function handleClick(event) {
         } else if (name.includes('complete-order')) {
             handleOrder();
             
-        } else if (name.includes('order-submit')) {
-            event.preventDefault();
-            handleSubmit();
         }
 
         generateOrderDetails();
         
 }
 
+function handleOrderSubmit(event) {
+    let name = event.target.id
+    console.log(`handle order called: name = ${name}`);
+
+    if (name.includes('modal-form')) {
+            handleSubmit();
+    }
+    generateOrderDetails();
+}
+
 function main() {
     generateFeed()
     document.addEventListener('click', (e)=> handleClick(e))
+    document.addEventListener('submit', (e)=> {
+        e.preventDefault();
+        handleOrderSubmit(e)})
 }
 
 main();
